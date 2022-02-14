@@ -8,6 +8,8 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { FiGithub, FiLinkedin } from "react-icons/fi"
+import {FaGithubAlt} from 'react-icons/fa'
 
 import Header from "./header"
 import "./layout.css"
@@ -25,23 +27,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+      <Header
+        className="sticky top-0 z-50"
+        siteTitle={data.site.siteMetadata?.title || `Title`}
+      />
+      <div>
+        <main className="relative">{children}</main>
+        <footer className="flex flex-row gap-4 absolute bottom-0 m-4 right-1/2">
+          <a href="https://github.com/kcbreuil"><FiGithub /></a>
+          <a href="https://www.linkedin.com/in/kaitlynbreuil/"><FiLinkedin /></a>
         </footer>
       </div>
     </>

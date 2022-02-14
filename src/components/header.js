@@ -2,32 +2,28 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+const navItems = [
+  {
+    name: "about",
+    link: "#about",
+  },
+  {
+    name: "work",
+    link: "#work",
+  },
+]
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <header className="w-full">
+    <nav className="flex flex-row m-4 justify-between">
+      <Link to="/">
+        <h1 className="text-3xl">{siteTitle}</h1>
+      </Link>
+      <div className="mt-2 flex flex-row gap-4">
+        {navItems.map(item => {
+          return <Link to={item.link}>{item.name}</Link>
+        })}
+      </div>
+    </nav>
   </header>
 )
 
