@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const navItems = [
   {
@@ -11,16 +12,20 @@ const navItems = [
     name: "work",
     link: "#work",
   },
+  {
+    name: "contact",
+    link: "#contact"
+  }
 ]
 const Header = ({ siteTitle }) => (
-  <header className="w-full">
+  <header className="w-full sticky top-0 z-50 py-3">
     <nav className="flex flex-row m-4 justify-between">
       <Link to="/">
-        <h1 className="text-3xl">{siteTitle}</h1>
+        <h1 className="text-4xl header">{siteTitle}</h1>
       </Link>
       <div className="mt-2 flex flex-row gap-4">
         {navItems.map(item => {
-          return <Link to={item.link}>{item.name}</Link>
+          return <AnchorLink to={item.link}>{item.name}</AnchorLink>
         })}
       </div>
     </nav>

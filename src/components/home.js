@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react"
 
 export default function Home() {
   return (
-    <div>
-    <div className="typewriter">
-      <h1>hi. i'm <span>katie</span>. i make stuff.</h1>
+    <div className="typewriter-container h-screen py-20">
+      <div className="typewriter">
+        <h1 className="flex align-middle">
+          hi. i'm katie. i make stuff.
+        </h1>
+      </div>
     </div>
-  </div>
   )
 }

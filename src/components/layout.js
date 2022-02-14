@@ -9,7 +9,6 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { FiGithub, FiLinkedin } from "react-icons/fi"
-import {FaGithubAlt} from 'react-icons/fa'
 
 import Header from "./header"
 import "./layout.css"
@@ -28,12 +27,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header
-        className="sticky top-0 z-50"
+        className=""
         siteTitle={data.site.siteMetadata?.title || `Title`}
       />
       <div>
         <main className="relative">{children}</main>
-        <footer className="flex flex-row gap-4 absolute bottom-0 m-4 right-1/2">
+        <footer className="flex flex-row justify-center gap-4 sticky bottom-0 py-4">
           <a href="https://github.com/kcbreuil"><FiGithub /></a>
           <a href="https://www.linkedin.com/in/kaitlynbreuil/"><FiLinkedin /></a>
         </footer>
