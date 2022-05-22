@@ -11,13 +11,13 @@
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.15em; /* Adjust as needed */
     animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
-    font-family: 'Amatic SC', cursive;
-    font-weight: 600;
+    font-family: 'Palmer Lake Print';
+    font-weight: 400;
     text-align: center;
     font-size: 45px;
-    -webkit-text-fill-color: rgb(194, 135, 135); /* Will override color (regardless of order) */
+    -webkit-text-fill-color: #e88593; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(194, 135, 135);
+    -webkit-text-stroke-color: #e88593;
   }
   
   .typewriter-container {
@@ -54,16 +54,15 @@
       margin: 0 auto; /* Gives that scrolling effect as the typing happens */
       letter-spacing: 0.15em; /* Adjust as needed */
       animation: typing 3.5s steps(28, end), blink-caret 0.75s step-end infinite;
-      font-family: 'Amatic SC', cursive;
-      font-weight: 600;
+      font-family: 'Palmer Lake Print';
       text-align: center;
-      font-size: 20px;
-      -webkit-text-fill-color: rgb(194, 135, 135); /* Will override color (regardless of order) */
+      font-size: 30px;
+      -webkit-text-fill-color: #e88593; /* Will override color (regardless of order) */
       -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: rgb(194, 135, 135);
+      -webkit-text-stroke-color: #e88593;
     }
   }
   
   .header {
-    font-family: 'Amatic SC', cursive;
+    font-family: "Palmer Lake Script";
   }

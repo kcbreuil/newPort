@@ -3,9 +3,10 @@ import React from "react"
 export default function About() {
   return (
     <div id="about" className="h-screen flex flex-col gap-4 text-center mx-20">
-      <h2 className="header text-4xl">about me</h2>
+      <div className="md:w-6/12 place-self-center">
+      <h2 className="header text-4xl m-4">about me</h2>
       <p>
-        Hi there! Welcome :D I am a fullstack developer born and raised in sunny South Florida. I
+        Hi there!  I am a fullstack developer born and raised in sunny South Florida. I
         tend to lean heavily on the frontend, and have spent the past few years
         developing UI and design systems for agencies, corporations and startups
         all over the US. I work really well in a team, but can also be found
@@ -13,12 +14,13 @@ export default function About() {
         caffeinated beverage, playing with my pets or doing some yoga around
         town, in no specific order.
       </p>
-      <h2 className="header text-4xl">skills</h2>
+      <h2 className="header text-4xl m-4">skills</h2>
       <p>
         HTML • CSS • JavaScript • Node.js • React • ReactNative • Web Components • Version Control
         • Gatsby • Heroku • Netlify • Mongoose • Hooks • MongoDB • 
         graphql • NoSQL • Design Systems • Wireframing • Sanity.io • Figma 
       </p>
+      </div>
     </div>
   )
 }

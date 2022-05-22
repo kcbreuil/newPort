@@ -1,6 +1,11 @@
 @font-face {
-  font-family: 'Palmer Lake';
+  font-family: 'Palmer Lake Print';
   src: url("../fonts/PalmerLake/PalmerLakePrint-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Palmer Lake Script';
+  src: url("../fonts/PalmerLake/PalmerLakeScript-Regular.ttf");
 }
 
 html {
@@ -11,10 +16,12 @@ html {
 }
 body {
   margin: 0;
+  background-color: #eee6d8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: "palmerlake";
+  font-family: "Palmer Lake Print";
+  font-size: 24px;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -26,6 +33,7 @@ body {
 
 .typewriter h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
+  font-family: "Palmer Lake Script";
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
