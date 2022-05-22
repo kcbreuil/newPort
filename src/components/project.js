@@ -1,16 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const projectItems = [
     {
-        projectName: "susieQ",
-        projectDescription: "Susie Q is the hottest baddie in town, we love her lots and lots and lots",
-        projectLink: "flalallalal"
+        projectName: "Herd",
+        projectDescription: "Developed with React Native for Herd Social",
+        projectLink: "https://www.theherdapp.com/",
 
     },
     {
-        projectName: "susieQ",
-        projectDescription: "Susie Q is the hottest baddie in town, we love her lots and lots and lots",
-        projectLink: "flalallalal"
+        projectName: "Silverado",
+        projectDescription: "Developed with Gatsby (React), Tailwind CSS, Sanity and Netlify while at Backroom",
+        projectLink: "https://silverado.org/",
+
+
+    },
+    {
+        projectName: "Hubble",
+        projectDescription: "Developed with Gatsby (React), Tailwind CSS, Sanity and Netlify while at Backroom",
+        projectLink: "https://www.hubble.net/",
 
     },
     {
@@ -18,7 +25,13 @@ const projectItems = [
         projectDescription: "Developed with Gatsby (React), Tailwind CSS, Sanity and Netlify while at Backroom",
         projectLink: "https://airtec.netlify.app/",
 
-    }
+    },
+    {
+        projectName: "Herd",
+        projectDescription: "Developed with React Native for Herd Social",
+        projectLink: "https://www.theherdapp.com/",
+
+    },
 ]
 
 export default function Project() {
@@ -30,7 +43,8 @@ export default function Project() {
                     <ProjectItem 
                         projectName={projectName} 
                         projectDescription={projectDescription}
-                        projectLink={projectLink} />
+                        projectLink={projectLink} 
+                        />
                 )
             })}
         </div>
@@ -38,11 +52,12 @@ export default function Project() {
 }
 
 function ProjectItem({projectName, projectDescription, projectLink}) {
+    const [isApp] = useState(false)
     return (
       <div>
           <h3>{projectName}</h3>
           <p>{projectDescription}</p>
-          <a href={projectLink}>site</a>
+          <a href={projectLink}>link</a>
       </div>
     )
   }
