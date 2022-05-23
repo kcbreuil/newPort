@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Home() {
   return (
-    <div className="typewriter-container h-screen py-40">
+    <div className="typewriter-container h-full py-40">
       <div className="typewriter">
         <h1 className="flex align-middle">
           hi. i'm katie. i make stuff.

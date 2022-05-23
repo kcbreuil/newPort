@@ -45,12 +45,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header
-        className=""
         siteTitle={data.site.siteMetadata?.title || `Title`}
+        isScrolled={isScrolled}
       />
       <div>
         <main className="relative">{children}</main>
-        <footer className={`${isScrolled ? `bg-brand-blue`	: `null`} flex flex-row justify-center gap-4 sticky bottom-0 py-4`}>
+        <footer className={`${isScrolled ? `bg-brand-pink`	: `transparent`} flex flex-row justify-center gap-4 sticky bottom-0 py-4`}>
           <a href="https://github.com/kcbreuil">
             <FiGithub />
           </a>
