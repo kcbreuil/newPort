@@ -24,7 +24,7 @@ const Header = ({ siteTitle, isScrolled }) => (
       <Link to="/">
         <StaticImage src="../images/KB_s_cherry.png" alt="logo" width={150}/>
       </Link>
-      <div className="mt-2 flex flex-row gap-2 md:gap-4 text-brand-black">
+      <div className="mt-2 flex flex-row gap-8 md:gap-4 text-brand-black">
         {navItems.map(item => {
           return <AnchorLink className="hover:underline decoration-wavy decoration-brand-yellow text-3xl" to={item.link}>{item.name}</AnchorLink>
         })}
