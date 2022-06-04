@@ -25,6 +25,11 @@ const projectItems = [
       "Developed with Gatsby (React), Tailwind CSS, Sanity and Netlify while at Backroom",
     projectLink: "https://airtec.netlify.app/",
   },
+  {
+    projectName: "Next Tech Trivia App",
+    projectDescription: "Developed a full-stack app over a 3 week sprint utilizing React, Express.js, SendGridApi, MongoDB, and GiftBitApi",
+    projectLink: "http://trivia.cloud.netapp.com/",
+  }
 ]
 
 export default function Project() {
