@@ -8,6 +8,11 @@ const projectItems = [
     projectLink: "https://www.theherdapp.com/",
   },
   {
+    projectName: "Big Eye",
+    projectDescription: "Developed Design System and component library in React.js",
+   
+  },
+  {
     projectName: "Silverado",
     projectDescription:
       "Developed with Gatsby (React), Tailwind CSS, Sanity and Netlify while at Backroom",
@@ -42,7 +47,7 @@ const projectItems = [
 
 export default function Project() {
   return (
-    <div className="flex flex-col md:flex-row gap-8 mx-20 flex-wrap">
+    <div className="flex flex-col justify-center md:flex-row gap-8 mx-40 my-8 flex-wrap">
       {projectItems.map(item => {
         const {
           projectDescription,

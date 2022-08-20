@@ -3,8 +3,8 @@ import React from "react"
 export default function About() {
   return (
     <div id="about" className="h-full flex flex-col gap-4 text-center m-20">
-      <div className="md:w-6/12 place-self-center">
-        <h2 className="header text-5xl m-4 underline decoration-wavy decoration-brand-yellow">
+      <div className="md:w-4/5 place-self-center">
+        <h2 className="header text-5xl my-8 underline decoration-wavy decoration-brand-yellow">
           about me
         </h2>
         <p className="mb-10 text-3xl">
@@ -20,10 +20,10 @@ export default function About() {
           not coding, I am sipping an iced caffeinated beverage, playing with my
           pets or doing some yoga around town, in no specific order.
         </p>
-        <h2 className="header text-5xl m-4 underline decoration-wavy decoration-brand-yellow">
+        <h2 className="header text-5xl my-8 underline decoration-wavy decoration-brand-yellow">
           skills
         </h2>
-        <p>
+        <p className="text-3xl">
           HTML • CSS • JavaScript • Node.js • React • ReactNative • Web
           Components • Version Control • Gatsby • Heroku • Netlify • Mongoose •
           Hooks • MongoDB • graphql • NoSQL • Design Systems • Wireframing •
