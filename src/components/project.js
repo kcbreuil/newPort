@@ -29,12 +29,20 @@ const projectItems = [
     projectName: "Next Tech Trivia App",
     projectDescription: "Developed a full-stack app over a 3 week sprint utilizing React, Express.js, SendGridApi, MongoDB, and GiftBitApi",
     projectLink: "http://trivia.cloud.netapp.com/",
+  },
+  {
+    projectName: "Andover",
+    projectDescription: "Developed component library and website templates using Vue.js",
+  },
+  {
+    projectName: "Nasdaq",
+    projectDescription: "Developed component library and design system using web components",
   }
 ]
 
 export default function Project() {
   return (
-    <div className="flex flex-col md:flex-row gap-4 mx-20">
+    <div className="flex flex-col md:flex-row gap-8 mx-20 flex-wrap">
       {projectItems.map(item => {
         const {
           projectDescription,
@@ -63,10 +71,10 @@ function ProjectItem({
   projectLink,
 }) {
   return (
-    <div>
-      <h3>{projectName}</h3>
+    <div className="w-52">
+      <h3 className="underline decoration-from-font	decoration-dotted	font-bold text-brand-orange text-3xl">{projectName}</h3>
       <p>{projectDescription}</p>
-      <a href={projectLink}>link</a>
+      {projectLink && <a className="hover:scale-50"href={projectLink}>link</a>}
     </div>
   )
 }

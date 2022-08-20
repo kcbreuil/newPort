@@ -63,7 +63,7 @@ export default function ContactForm() {
           <label htmlFor="name" className="text-brand-black">
             Name:
             <input
-              className="border-2 overflow-hidden rounded-md border-solid border-brand-blue"
+              className="border-2 overflow-hidden rounded-md border-solid border-brand-blue px-2"
               type="text"
               name="name"
               onChange={handleChange}
@@ -73,7 +73,7 @@ export default function ContactForm() {
           <label htmlFor="email" className="text-brand-black">
             Email:
             <input
-              className="border-2 overflow-hidden rounded-md border-solid border-brand-blue"
+              className="border-2 overflow-hidden rounded-md border-solid border-brand-blue px-2"
               type="email"
               name="email"
               onChange={handleChange}
@@ -83,7 +83,7 @@ export default function ContactForm() {
           <label htmlFor="message" className="text-brand-black">
             Message:
             <textarea
-              className="border-2 overflow-hidden rrounded-md	 border-solid border-brand-blue"
+              className="border-2 overflow-hidden rrounded-md	 border-solid border-brand-blue px-2"
               name="message"
               placeholder="drop me a message!"
               onChange={handleChange}
