@@ -8,7 +8,7 @@ export default function Home() {
       <div className="rounded-full overflow-hidden w-[200px]">
         <StaticImage
           className="object-cover"
-          src={katie}
+          src="../images/katie.jpeg"
           alt="picture"
           width={300}
           height={300}
