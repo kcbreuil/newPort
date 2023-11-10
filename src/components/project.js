@@ -3,14 +3,30 @@ import React, { useState } from "react"
 
 const projectItems = [
   {
+    projectName: "Caterpillar",
+    projectDescription:
+      "Developed Design System and component library in Web Components",
+  },
+  {
+    projectName: "Better",
+    projectDescription: "Developed website in Next js and tailwindCSS",
+    projectLink: "https://www.bettercover.com/",
+  },
+
+  {
     projectName: "Herd",
     projectDescription: "Developed with React Native for Herd Social",
     projectLink: "https://www.theherdapp.com/",
   },
   {
     projectName: "Big Eye",
-    projectDescription: "Developed Design System and component library in React.js",
-   
+    projectDescription:
+      "Developed Design System and component library in React.js",
+  },
+  {
+    projectName: "Liquid Collections",
+    projectDescription: "Developed website and custom CMS with Next.js",
+    projectLink: "https://liquidcollections.com/",
   },
   {
     projectName: "Silverado",
@@ -32,17 +48,20 @@ const projectItems = [
   },
   {
     projectName: "Next Tech Trivia App",
-    projectDescription: "Developed a full-stack app over a 3 week sprint utilizing React, Express.js, SendGridApi, MongoDB, and GiftBitApi",
+    projectDescription:
+      "Developed a full-stack app over a 3 week sprint utilizing React, Express.js, SendGridApi, MongoDB, and GiftBitApi",
     projectLink: "http://trivia.cloud.netapp.com/",
   },
   {
     projectName: "Andover",
-    projectDescription: "Developed component library and website templates using Vue.js",
+    projectDescription:
+      "Developed component library and website templates using Vue.js",
   },
   {
     projectName: "Nasdaq",
-    projectDescription: "Developed component library and design system using web components",
-  }
+    projectDescription:
+      "Developed component library and design system using web components",
+  },
 ]
 
 export default function Project() {
@@ -70,16 +89,21 @@ export default function Project() {
   )
 }
 
-function ProjectItem({
-  projectName,
-  projectDescription,
-  projectLink,
-}) {
+function ProjectItem({ projectName, projectDescription, projectLink }) {
   return (
     <div className="w-52">
-      <h3 className="underline decoration-from-font	decoration-dotted	font-bold text-brand-orange text-3xl">{projectName}</h3>
+      <h3 className="underline decoration-from-font	decoration-dotted	font-bold text-brand-orange text-3xl">
+        {projectName}
+      </h3>
       <p>{projectDescription}</p>
-      {projectLink && <a className="underline hover:decoration-wavy hover:decoration-brand-yellow" href={projectLink}>link</a>}
+      {projectLink && (
+        <a
+          className="underline hover:decoration-wavy hover:decoration-brand-yellow"
+          href={projectLink}
+        >
+          link
+        </a>
+      )}
     </div>
   )
 }
