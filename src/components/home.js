@@ -1,15 +1,13 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import katieImg from "../images/katie.jpeg"
-
 export default function Home() {
   return (
     <div className="flex flex-col items-center gap-20 h-screen">
       <div className="rounded-full overflow-hidden w-[200px]">
         <StaticImage
           className="object-cover"
-          src="../images/katie.jpeg"
+          src="../../static/images/katie.jpeg"
           alt="picture"
           width={300}
           height={300}
