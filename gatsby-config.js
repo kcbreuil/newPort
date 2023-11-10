@@ -6,9 +6,11 @@ module.exports = {
     siteUrl: `https://katiebreuil.com/`,
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,8 +18,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -37,17 +37,17 @@ module.exports = {
       options: {
         fonts: [
           `amatic sc`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
         ],
-        display: 'swap'
-      }
+        display: "swap",
+      },
     },
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: -100
-      }
-    }
+        offset: -100,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

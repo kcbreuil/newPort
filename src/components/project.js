@@ -5,11 +5,12 @@ const projectItems = [
   {
     projectName: "Caterpillar",
     projectDescription:
-      "Developed Design System and component library in Web Components",
+      "Developed Design System and component library in Web Components with Big Medium",
   },
   {
     projectName: "Better",
-    projectDescription: "Developed website in Next js and tailwindCSS",
+    projectDescription:
+      "Developed website in Next js and tailwindCSS while at Southleft",
     projectLink: "https://www.bettercover.com/",
   },
 
@@ -21,7 +22,7 @@ const projectItems = [
   {
     projectName: "Big Eye",
     projectDescription:
-      "Developed Design System and component library in React.js",
+      "Developed Design System and component library in React.js with SuperFriendly",
   },
   {
     projectName: "Liquid Collections",
@@ -44,7 +45,7 @@ const projectItems = [
     projectName: "Airtec",
     projectDescription:
       "Developed with Gatsby (React), Tailwind CSS, Sanity and Netlify while at Backroom",
-    projectLink: "https://airtec.netlify.app/",
+    projectLink: "https://www.flyairtec.com/",
   },
   {
     projectName: "Next Tech Trivia App",
