@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import katie from "../images/katie.jpeg"
+
+import katieImg from "../images/katie.jpeg"
 
 export default function Home() {
   return (
